@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaurav's Portfolio</title>
+    <link rel="shortcut icon" href="icons.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-image: linear-gradient(
+          to right,
+          rgb(22, 36, 91),
+          rgba(187, 73, 73, 0)
+        );
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: bottom right, left, right;
+        color: rgb(240, 235, 235);
+        font-family: "Lugrasimo", cursive;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 98px;
+        background-color: #0b0b4b;
+        border-bottom: 2px solid white;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 33px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        border-bottom: 1.5px solid rgb(65, 2, 2);
+      }
+
+      nav ul li a:hover {
+        color: #0c0cbf;
+      }
+
+      .left {
+        font-size: 1.7rem;
+        text-shadow: 3px 4px 5px #999;
+      }
+      .right {
+        margin: 0 0 0 10px;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .Intro {
+        font-size: 40px;
+        align-self: center;
+      }
+      .image img {
+        width: 90%;
+        margin: 50px 0;
+      }
+      .purple {
+        color: rgb(32, 214, 214);
+        font-size: 60px;
+      }
+      #element {
+        color: rgb(186, 142, 84);
+      }
+      .secondsection {
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 5px solid rgb(119, 119, 196);
+        box-shadow: inset 2px 3px 4px;
+        margin: 50px;
+        border-radius: 5px;
+      }
+      .Education {
+        display: flex;
+        justify-content: center;
+      }
+      .educate {
+        align-self: center;
+        padding: 0 0 50px 0;
+        font-size: 50px;
+        color: black;
+        text-shadow: 4px 5px 6px rgb(221, 214, 215);
+        margin-bottom: 50px;
+      }
+
+      .lefpart {
+        width: 800px;
+        border-left: 4px solid rgb(29, 29, 87);
+        padding-left: 20px;
+      }
+
+      .legend1 {
+        text-align: center;
+        color: black;
+        text-shadow: 3px 4px 5px white;
+        font-size: 40px;
+      }
+
+      .exam {
+        color: black;
+        font-size: 30px;
+      }
+      .myself {
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(165, 133, 92);
+      }
+      i {
+        font-size: 25px;
+      }
+      .rightpart {
+        border-left: 4px solid rgb(29, 29, 87);
+        width: 800px;
+        padding-left: 20px;
+      }
+      .btech {
+        font-size: 30px;
+        color: black;
+      }
+      .myself1 {
+        font-size: 20px;
+        font-style: italic;
+        color: rgb(189, 153, 110);
+      }
+      .Thirdsection {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        height: 400px;
+        border-top: 4px solid rgb(119, 119, 196);
+        border-radius: 5px;
+        box-shadow: inset 2px 3px 4px;
+      }
+      .Aboutme {
+        font-size: 50px;
+        color: black;
+        text-shadow: 2px 3px 4px white;
+        font-weight: 1000;
+        margin: 0 80px 0 0;
+        align-self: center;
+        padding-top: 20px;
+      }
+      .upper {
+        margin: 40px 50px 0 0;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+      }
+      .gaurav {
+        margin: 0 0 30px 200px;
+        font-size: 30px;
+        font-style: oblique;
+      }
+      #g1 {
+        color: rgb(32, 214, 214);
+        font-size: 40px;
+        text-shadow: 2px 3px 4px rgb(32, 214, 214);
+        font-style: oblique;
+      }
+      .row {
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: black;
+        font-weight: 800;
+      }
+      .lower {
+        margin: 30px 50px 0 250px;
+        width: 120px;
+        padding: 0 0 0 50px;
+      }
+      .lower nav {
+        height: 50px;
+        border-radius: 10px;
+      }
+      .contactsection{
+        border-top: 4px solid rgb(119, 119, 196);
+        border-radius: 5px;
+        box-shadow: inset 2px 3px 4px;
+        margin: 50px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+      }
+      .row{
+        margin-bottom: 20px;
+        display: flex;
+      }
+      .section-title1{
+        font-size: 30px;
+        font-weight: 500;
+        text-shadow: 2px 3px 4px white;
+      }
+      .asking{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .asking h3{
+        color: black;
+      }
+      .contactsection p{
+        color: rgb(234, 225, 225);
+        color: black;
+        
+      }
+      .contactsection h4{
+        color: rgb(234, 225, 225);
+        margin: 0 0 0 40px;
+        font-size: 20px;
+      }
+      .contactsection div{
+        margin: 0 60px;
+      }
+   
+      @media (max-width:640px){
+            .firstsection{
+                flex-direction: row;
+            }
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Gaurav's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Aboutme1">About</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="Intro">
+          Hi, My name is <span class="purple">Gaurav</span> and I
+          <span>am a passionate</span>
+          <span id="element"></span>
+        </div>
+        <div class="image">
+          <img id="web1" src="web1.webp" alt="" />
+        </div>
+      </section>
+      <section class="secondsection">
+        <h1 class="educate" id="education">Education</h1>
+        <div class="Education">
+          <div class="lefpart">
+            <h3 class="timeline">
+              <i class="fa fa-calendar"> </i>
+              2020-2021
+            </h3>
+            <b class="exam">Intermediate examination</b>
+            <div>
+              <p class="myself">S.R Public School</p>
+              <p>Kota, Rajasthan</p>
+              <p>Aggregate of 85%</p>
+            </div>
+          </div>
+          <div class="rightpart">
+            <h3>
+              <i class="fa fa-calendar"> </i>
+              2021-2025
+            </h3>
+            <b class="btech">Bachelor of Technology</b>
+            <div>
+              <p class="myself1">Harcourt Butler Technical University</p>
+              <p>Kanpur, Uttar Pradesh</p>
+              <p>
+                I am currently pursuing a B.Tech degree in Electrical
+                Engineering
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Thirdsection">
+        <div id="Aboutme1" class="Aboutme">About Me</div>
+        <div>
+          <div class="upper">
+            <div class="gaurav">I'm <span id="g1">Gaurav</span> Singh</div>
+            <div class="row">
+              <div class="stpart">
+                <div class="info-item padd-15">
+                  <p>
+                    Birthday :
+                    <span>16 june, 2003</span>
+                  </p>
+                </div>
+                <div class="info-item padd-15">
+                  <p>Age : <span>20</span></p>
+                </div>
+                <div class="info-item padd-15">
+                  <p>Email : <span>gauravsingh16062003@gmail.com</span></p>
+                </div>
+              </div>
+              <div class="ndpart">
+                <div class="info-item padd-15">
+                  <p>Phone : <span>+91 9636094209</span></p>
+                </div>
+                <div class="info-item padd-15">
+                  <p>City : <span>Gorakhpur</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lower">
+            <nav><a href="#contact">Hire me</a></nav>
+          </div>
+        </div>
+      </section>
+        <section class="contactsection" id="contact">
+          <div class="container">
+              <div class="row">
+                  <div class="section-title1">
+                      <h2>Contact me</h2>
+                  </div>
+              </div>
+              <div class="asking">
+                <h3 class="contact-title padd-15">Have you any question?</h3>
+              <h4 class="contact-sub-title padd-15">I'm At Your services</h4>
+              </div>
+              <div class="row">
+                  <!-- contact info item start***************** -->
+                  <div class="contact-info-item1">
+                      <a href="tel:+919636094209">
+                          <div class="icon">
+                              <i class="fa fa-phone"></i>
+                          </div>
+                          <h4>Call us on</h4>
+                          <p>+91 96360 94209</p>
+                      </a>
+                  </div>
+                  <!-- contact info item end***************** -->
+                  <!-- contact info item start***************** -->
+                  <div class="contact-info-item2">
+                      <a href="https://www.linkedin.com/in/gaurav-singh-05b18221b">
+                          <div class="icon">
+                              <i class="fa fa-brands fa-linkedin"></i>
+                          </div>
+                          <h4>LinkedIn</h4>
+                          <p>https://www.linkedin.com/in/gaurav-singh-05b18221b</p>
+                      </a>
+                  </div>
+                  <!-- contact info item end***************** -->
+                  <!-- contact info item start***************** -->
+                  <div class="contact-info-item3">
+                    <a href="mailto:gauravsingh16062003@gmail.com">
+                      <div class="icon">
+                          <i class="fa fa-envelope"></i>
+                      </div>
+                      <h4>Email</h4>
+                      <p>gauravsingh16062003@gmail.com</p>
+                  </a>
+                  </div>
+              </div>
+              
+            </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Designer", "Web Developer "],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
